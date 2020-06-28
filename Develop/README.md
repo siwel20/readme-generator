@@ -1,11 +1,9 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `
-  # ${data.title}
+
+  # Paul
 
   ## Description 
 
-   ${data.description}
+   Paul
   
   
   ## Table of Contents (Optional)
@@ -20,21 +18,21 @@ function generateMarkdown(data) {
   
   ## Installation
   
-  ${data.installation}
+  undefined
   
   
   ## Usage 
   
-  ${data.usage}
+  undefined
   
   ## Credits
   
-  ${data.credits}  
+  undefined  
   
   
   ## License
   
-  ${data.license}
+  undefined
   ---
   
   🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
@@ -44,22 +42,18 @@ function generateMarkdown(data) {
   ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
   
   Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-  ${data.badges}
+  undefined
   
   ## Contributing
   
-  ${data.contributing}
+  undefined
   
   ## Tests
   
-  ${data.tests}
+  undefined
 
   ## Questions
 
- email: ${data.email}
- phone: ${data.phone}
- GitHub Username: ${data.username}
-`;
-}
-
-module.exports = generateMarkdown;
+ email: undefined
+ phone: undefined
+ GitHub Username: undefined
