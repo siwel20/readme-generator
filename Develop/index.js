@@ -1,33 +1,63 @@
 const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require('fs');
 const inquirer = require('inquirer');
+
 const data = {}
 
-// array of questions for user
+// function to initialize program
 function init() {
+    // array of questions for user
 inquirer.prompt([{
     type: 'input',
     message: 'What is the title of your project? (Required)', 
-    name: 'title'
+    name: 'title',
+    validate: titleInput => {
+        if (titleInput) {
+            return true;
+        } else {
+            console.log('Please enter your projects title!');
+        }
+    }
 },
 {
     type: 'input',
-    message: 'Please provide a description of your project',
-    name: 'description'
+    message: 'Please provide a description of your project. (Required)',
+    name: 'description',
+    validate: descrInput => {
+        if (descrInput) {
+            return true;
+        } else {
+            console.log('Please enter a description of your project');
+        }
+    }
 },
 {
     type: 'input',
-    message: 'What dependancies did you use with this project, (what do you need to have installed to run this program)?', 
-    name: 'installation'  
+    message: 'What dependancies need to be installed with your project? (Required)', 
+    name: 'installation',
+    validate: installInput => {
+        if (installInput) {
+            return true;
+        } else {
+            console.log('Please provide dependancies installation steps');
+        }
+    }
 },
 {
     type: 'input',
-    message: 'Please explain how to use this application',
-    name: 'usage'
+    message: 'Please explain how to use this application. (Required)',
+    name: 'usage',
+    validate: useageInput => {
+        if (useageInput) {
+            return true;
+        } else {
+            console.log("Please provide instructions on how to use this program!");
+        }
+    }
 },
 {
     type: 'input',
-    message: "Who helped you with this project. Please give them some credit",
+    message: "Please list any third-party assets or collaborators that were assisted in this project.",
     name: "credits",
 },
 {
@@ -57,7 +87,6 @@ inquirer.prompt([{
     name: 'email'
 }
 
-// function to write README file
 ]).then(userInput => {
     data.title = userInput.title;
     data.description = userInput.description;
@@ -65,18 +94,17 @@ inquirer.prompt([{
     data.usage = userInput.usage;
     data.credits = userInput.credits;
     data.license = userInput.license;
-    data.badges = userInput.badges;
     data.contributing = userInput.contributing;
     data.tests = userInput.tests;
     data.username = userInput.username;
     data.email = userInput.email;
-    
+    // function to write README file
     const outPut = generateMarkdown(data)    
         fs.writeFile("../README.md", outPut, (err) => {
             if (err) {
                 throw (err)
             } else {
-        console.log("Success!")
+        console.log("Success! Your updated ReadMe awaits!")
         }
   })
 })
