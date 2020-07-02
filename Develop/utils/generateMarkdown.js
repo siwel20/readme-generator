@@ -5,7 +5,7 @@ function generateMarkdown(data) {
 
   ## Description 
 
-   ${data.description}
+  ${data.description}
   
   
   ## Table of Contents (Optional)
@@ -16,6 +16,9 @@ function generateMarkdown(data) {
   * [Usage](#usage)
   * [Credits](#credits)
   * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
   
   
   ## Installation
@@ -55,10 +58,9 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-
- email: ${data.email}
- phone: ${data.phone}
- GitHub Username: ${data.username}
+  For questions you can contact me at:
+  * GitHub Username: https://github.com/${data.username}/
+  * email: ${data.email}
 `;
 }
 
