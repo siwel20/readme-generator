@@ -100,7 +100,7 @@ inquirer.prompt([{
     data.email = userInput.email;
     // function to write README file
     const outPut = generateMarkdown(data)    
-        fs.writeFile("../README.md", outPut, (err) => {
+        fs.writeFile("../sample-README.md", outPut, (err) => {
             if (err) {
                 throw (err)
             } else {
