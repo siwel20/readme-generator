@@ -1,11 +1,11 @@
 
-  # Read Me Generator
+  # README Generator
 
   ![licensebadge](https://img.shields.io/badge/license-MIT-red)
 
   ## Description 
 
-  Read Me Generator 
+  This is a program to help quickly create a professional README for new projects, by answering questions that are prompted in the command line. 
   
   
   ## Table of Contents
@@ -21,17 +21,24 @@
   
   ## Installation
   
-  npm inquirer and Node.js
+  You will need to have Node.js installed on your computer. In the program itself you will need to add the inquirer package from npm. You can add Node.js by going to its website at https://nodejs.org/en/ and downloading the current version. You can add npm inquirer by going to its website aat https://www.npmjs.com/package/inquirer and follow the installation instructions. 
   
   
   ## Usage 
   
-  Answer a series of questions to get a professional readme
+  Once you are ready to complete the README for your project, start the program by opening a new terminal from the index.js file. 
+
+  ![new-terminal](./assets/images/new-terminal.jpg)
+
+  Then the following command: node index.js, in the command line. 
+  ![start-command](./assets/images/start-command.PNG)
+
+  This will start a series of questions that when answered will auto fill your README once the questions have been answered. Extra items, such as screen shots, video links and sections, can be added or removed manually. 
 
   
   ## Credits
   
-  N/A  
+  Used Node.js and npm inquirer package.   
   
   
   ## License
@@ -41,15 +48,17 @@
   
   ## Contributing
   
-  N/
+  No contributions are requested at this time. 
 
   
   ## Tests
   
-  Test dfadlfa;flkjadsl;fjasf
+  This project can be tested by following the same instructions found in the usage section above. Just substitute the full answers with brief ones to test the program. 
 
 
   ## Questions
   For questions you can contact me here:
   * GitHub Username: https://github.com/siwel20/
-  * email: pthrock@gmail.com
+  * email: throckmortonfam@gmail.com
+  * Screencastify link for video walkthrough: https://drive.google.com/file/d/1HEknVbyj6ylWQdV6yDHyGndJFt5uFVj8/view
+  * GitHub Link for current repository: https://github.com/siwel20/readme-generator
