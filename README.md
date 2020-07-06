@@ -41,6 +41,7 @@
   * Link to current repository: https://github.com/siwel20/readme-generator
 
   ## Video Walkthrough
-  * Screencastify link for video walkthrough: https://drive.google.com/file/d/1-O51oN4mY-qarwno79Tnemach5PCvN1G/view
+  * Screencastify link for video walkthrough: https://drive.google.com/file/d/1-O51oN4mY-qarwno79Tnemach5PCvN1G/view?usp=sharing
+  
 
 
